@@ -1,0 +1,5 @@
+<h3> Personajes </h3>
+        <hr>
+        <ul>
+            <li *ngFor="let hero of heroes">{{ hero.name }} - <b [ngClass]="{verde:hero.HP>3000, rojo:hero.HP<=1000, amarillo:hero.HP>1000 && hero.HP<=3000}">{{ hero.HP }}</b></li>
+        </ul>
